@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+    <f:facet name="first">
+        <meta content='text/html; charset=UTF-8' http-equiv="Content-Type"/>
+        <title>Websocket Example</title>
+    </f:facet>
+    <h:outputStylesheet library="css" name="layout.css"/>
+</h:head>
+<h:body>
+    <p:growl id="growl" showDetail="false" sticky="false" autoUpdate="true" life="4000"/>
+    <p:layout fullPage="true" styleClass="main_layout">
+        <p:layoutUnit position="north" size="105">
+            <p:layout>
+                <p:layoutUnit position="west" size="450" styleClass="north-west_layout" >
+                    <h:form >
+                        <ui:insert name="site_title">Put default content here, if any</ui:insert>
+                    </h:form>
+                </p:layoutUnit>
+                <p:layoutUnit position="center" styleClass="north-center_layout">
+                    <h:form styleClass="north-center_layout-menu">
+                    </h:form>
+                </p:layoutUnit>
+            </p:layout>
+        </p:layoutUnit>
+        <p:layoutUnit position="west" size="250" styleClass="west_layout">
+            <div class="menuBackground">
+                <p:menu toggleable="false" styleClass="west_layout-menu">
+                    <p:menuitem value="Websocket with Javascript" outcome="/index.xhtml" styleClass="west_layout-menuitem" />
+                    <p:menuitem value="JSF Websocket with Banking Bean" outcome="/websocket.xhtml" styleClass="west_layout-menuitem"/>
+                </p:menu>
+            </div>
+        </p:layoutUnit>
+        <p:layoutUnit position="center" styleClass="center_layout">
+            <ui:insert name="main_content">Put default content here, if any</ui:insert>
+        </p:layoutUnit>
+    </p:layout>
+</h:body>
+</html>

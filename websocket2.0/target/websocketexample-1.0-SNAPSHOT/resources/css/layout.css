@@ -1,0 +1,66 @@
+
+body {
+    background: transparent url(../images/background_solid.jpg);
+}
+
+/*body .ui-layout-unit-content {
+    background-color: rgba(40, 96, 125, 0.8) !important;
+    border: none;
+}*/
+
+.north-west_layout {
+    font-size: 24pt !important;
+    border: none;
+}
+
+.north-center_layout-menu {
+    background-color: rgba(40, 96, 125, 0.8);
+    border: none;
+    box-shadow: 5px 5px 20px #888888;
+}
+
+.north-center_layout {
+    text-align: right;
+    border: none;
+}
+
+.west_layout {
+    background-color: transparent;
+    border: none;
+}
+
+.west_layout-menu {
+    background: rgba(40, 96, 125, 0.8);
+    box-shadow: 5px 5px 20px #888888;
+    border-radius: 10px;
+    height: auto;
+}
+
+.west_layout .ui-layout-unit-content{
+    background: transparent url(images/background_solid.jpg);
+}
+
+.center_layout {
+    background-color: transparent;
+    border: none;
+}
+.center_layout .blue_button {
+    margin-top: 10px;
+    border: 1px solid black;
+    text-align: center;
+    background: #3F51B5;
+    color: white;
+}
+
+.center_layout .ui-layout-unit-content{
+    background: transparent url(images/background_solid.jpg);
+}
+
+.inputTextWidth {
+    width: 300px;
+}
+
+.companyHeaderGrid.ui-panelgrid .ui-panelgrid-cell {
+    border: none;
+    margin: 0 auto;
+}
